@@ -1,0 +1,103 @@
+@mixin linx ($link, $visit, $hover, $active) {
+    a {
+        color: $link;
+        &:visited {
+            color: $visit;
+        }
+        &:hover {
+            color: $hover;
+        }
+        &:active {
+            color: $active;
+        }
+    }
+}
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin translate($x, $y) {
+    -webkit-transform: translate( $x, $y);
+    -moz-transform: translate( $x, $y);
+    -ms-transform: translate( $x, $y);
+    -o-transform: translate( $x, $y);
+    transform: translate( $x, $y);
+}
+@mixin translateX( $x ) {
+    -webkit-transform: translateX( $x );
+    -moz-transform: translateX( $x );
+    -ms-transform: translateX( $x );
+    -o-transform: translateX( $x );
+    transform: translateX( $x );
+}
+@mixin translateY( $y ) {
+    -webkit-transform: translateY( $y );
+    -moz-transform: translateY( $y );
+    -ms-transform: translateY( $y );
+    -o-transform: translateY( $y );
+    transform: translateY( $y );
+}
+@mixin skewRotate( $x, $y ) {
+    -webkit-transform: skewY($x) rotate($y);
+    -moz-transform: skewY($x) rotate($y);
+    -ms-transform: skewY($x) rotate($y);
+    -o-transform: skewY($x) rotate($y);
+    transform: skewY($x) rotate($y);
+}
+
+@mixin transition($property)  {
+    -webkit-transition: ($property) 0.4s; 
+    -moz-transition: ($property) 0.4s; 
+    -ms-transition: ($property) 0.4s; 
+    -o-transition: ($property) 0.4s; 
+    transition: ($property) 0.4s; 
+}
+@mixin slow($property)  {
+    -webkit-transition: ($property) 1s; 
+    -moz-transition: ($property) 1s; 
+    -ms-transition: ($property) 1s; 
+    -o-transition: ($property) 1s; 
+    transition: ($property) 1s; 
+}
+
+@mixin rotate($deg) {
+    -webkit-transform: rotate($deg);
+    -moz-transform: rotate($deg);
+    -ms-transform: rotate($deg);
+    -o-transform: rotate($deg);
+    transform: rotate($deg);
+}
+@mixin scale($x, $y) {
+    -webkit-transform: scale( $x, $y);
+    -moz-transform: scale( $x, $y);
+    -ms-transform: scale( $x, $y);
+    -o-transform: scale( $x, $y);
+    transform: scale( $x, $y);
+}
+@mixin v-flex($align) {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: ($align);
+    -moz-box-align: ($align);
+    -ms-flex-align: ($align);
+    -webkit-align-items: ($align);
+    align-items: ($align);
+}
+
+
+@mixin headline($color, $size) {
+    color: $color;
+    font-size: $size;
+}
+
+@mixin responsive-box($height){
+    position: relative;
+    &:before{
+        content: '';
+        display: block;
+        padding-top: $height;
+    }
+}

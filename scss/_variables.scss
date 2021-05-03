@@ -1,0 +1,146 @@
+//----- colors -----
+$main-clr: #015ca8;
+$second-clr: #20d7a2;
+$footer-clr: #dedede;
+
+$forgot-pass: rgba(1,92,168,0.7);
+$sec-tilte-clr:#333;
+$mainFont-clr: #333;
+$blueFont-clr: #015ca8;
+$greenFont-clr: #20d7a2;
+
+
+$input-clr: #e6e6e6; //and main select
+$selFont-clr: #6c6d70;  //very important
+
+$selSearch-clr: rgba(0,0,0,0.45); //searchBox
+$selSearchFont-clr: rgba(255,255,255,0.7); //searchBox
+
+$pagination-var01: #cacfd2;
+$pagination-var02: #cacfd2;
+
+//----- font-sizes -----
+$small-font:14px;
+$main-fontSize:16px;
+$title-fontSize:16px;
+$header-fontSize:14px;
+$med-fontSize:18px;
+$internals-heading:24px;
+$internals-title:30px;
+
+$secPadding: 20px;
+$other: 200px;
+
+
+//----- translate -----
+$isRtl: ltr;
+$left: left;
+$right: right;
+$direction:ltr;
+$flex-direction:row;
+$start: flex-start;
+$end: flex-end;
+
+//-- font-trans
+$bodyFont: Raleway-Regular;
+$headingFontLight: Raleway-Light;
+$headingFont: Raleway-Bold;
+$semiBold: Raleway-SemiBold;
+$blackFont:Raleway-Black;
+//--
+$letter-spacing: 3px;
+$letter-spacing02: 4px;
+$letter-spacing03: 1px;
+$letter-spacing04: 2px;
+//-----
+$the-message: 200%;
+
+//-- arrow-trans
+$double-right: "\f101";
+$double-left: "\f100";
+$chevron-left:"\f053";
+$chevron-right:"\f054";
+$angle-right: '\f105';
+
+
+$spacing:4px;
+$spacing-sub:3px;
+$spacing-nav:1px;
+
+$rotate180deg : 0;
+$scaleX:1;
+
+@if $isRtl == rtl
+{
+  $left: right;
+  $right: left;
+  $direction:rtl;
+  $start: flex-end;
+  $end: flex-start;
+
+  $minus: -1;
+  $bodyFont: Changa-Regular;
+  $headingFontLight: Changa-Light;
+  $headingFont: Changa-Bold;
+  $semiBold: Changa-SemiBold;
+  $blackFont:Changa-ExtraBold;
+  $navSize:18px;
+  $double-right: "\f100";
+  $double-left: "\f101";
+  $angle-right: '\f104';
+  $chevron-left:"\f054";
+  $chevron-right:"\f053";
+  $rotate90: -90deg;
+  $flex-direction:row-reverse;
+  $rotateY: rotateY(180deg);
+  $rotateZ: rotateZ(180deg);
+  $rotate180deg : 180deg;
+  $scaleX:-1;
+  $small-font:16px;
+  $main-fontSize:18px;
+  $title-fontSize:18px;
+  $header-fontSize:16px;
+  $med-fontSize:20px;
+  $internals-heading:26px;
+  $internals-title:32px;
+
+
+  $letter-spacing: 0;
+  $letter-spacing02: 0;
+  $letter-spacing03: 0;
+  $letter-spacing04: 0;
+
+  $the-message: -200%;
+}
+@else {
+  $left: left;
+  $right: right;
+  $direction:ltr;
+  $start: flex-start;
+  $end: flex-end;
+  $minus: 1;
+  $bodyFont: Raleway-Regular;
+  $headingFont: Raleway-Bold;
+  $blackFont:Raleway-Black;
+  $headingFontLight: Raleway-Light;
+  $langFont:'Markazi Text', serif;
+  $double-right: "\f101";
+  $double-left: "\f100";
+  $angle-right: '\f105';
+  $chevron-left:"\f053";
+  $chevron-right:"\f054";
+  $rotate90: 90deg;
+  $flex-direction:row;
+  $rotateY: rotateY(0);
+  $rotateZ: rotateZ(0);
+  $rotate180deg : 0;
+  $scaleX:1;
+
+  $letter-spacing: 3px;
+  $letter-spacing02: 4px;
+  $letter-spacing03: 1px;
+  $letter-spacing04: 2px;
+
+  $the-message: 200%;
+
+}

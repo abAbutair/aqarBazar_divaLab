@@ -1,0 +1,1 @@
+sass --watch D:\work\diva\aqar-bazar\aqar-bazar-static\scss\imports.scss:D:\work\diva\aqar-bazar\aqar-bazar-static\css\style-en.css

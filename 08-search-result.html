@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"-->
+    <!--integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style-en.css">
+    <title>Aqar Bazar</title>
+</head>
+
+<body>
+<header>
+    <nav class="upper-nav">
+        <ul>
+            <li>
+                <div class="sel">
+                    <select class="custom-select">
+                        <option selected>country</option>
+                        <option value="1">egypt</option>
+                        <option value="2">turkey</option>
+                        <option value="3">canada</option>
+                    </select>
+                </div>
+            </li>
+            <li>
+                <div class="sel">
+                    <select class="custom-select">
+                        <option selected>currency</option>
+                        <option value="1">currency01</option>
+                        <option value="2">currency02</option>
+                        <option value="3">currency03</option>
+                        <option value="4">currency04</option>
+                    </select>
+                </div>
+            </li>
+            <li>
+                <div class="sel">
+                    <select class="custom-select">
+                        <option selected>language</option>
+                        <option value="1">arabic</option>
+                        <option value="2">english</option>
+                    </select>
+                </div>
+            </li>
+            <li>
+                <button type="button" class="btn login-register" onclick="window.location.href='#'">
+                    <i class="fas fa-sign-in-alt"></i>
+                </button>
+                <button type="button" class="btn login-register" onclick="window.location.href='#'">
+                    <i class="fas fa-user-plus"></i>
+                </button>
+            </li>
+        </ul>
+    </nav>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">about us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Add your PROPERTIES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">faq</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="search-back small-search" style="background-image: url('images/main-pic.jpg')">
+    <div class="rent-search">
+        <div class="container">
+            <h1 class="search-heading">renting become easier</h1>
+            <form class="dark-form" action="">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="sel">
+                            <select class="custom-select">
+                                <option selected>location</option>
+                                <option value="1">cairo</option>
+                                <option value="2">alexandria</option>
+                                <option value="3">sharm elsheikh</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="date-form">
+                            <input type="text" name="value_from_start_date" data-datepicker="separateRange"
+                                   placeholder="date from">
+                            <input type="text" name="value_from_end_date" data-datepicker="separateRange"
+                                   placeholder="to">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="sel">
+                            <select class="custom-select">
+                                <option selected>by type</option>
+                                <option value="1">cairo</option>
+                                <option value="2">alexandria</option>
+                                <option value="3">sharm elsheikh</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="sel search-control">
+                            <select class="custom-select">
+                                <option selected>num of guests</option>
+                                <option value="1">cairo</option>
+                                <option value="2">alexandria</option>
+                                <option value="3">sharm elsheikh</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="sel search-control">
+                            <select class="custom-select">
+                                <option selected>num of rooms</option>
+                                <option value="1">cairo</option>
+                                <option value="2">alexandria</option>
+                                <option value="3">sharm elsheikh</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="sel search-control">
+                            <select class="custom-select">
+                                <option selected>max price</option>
+                                <option value="1">cairo</option>
+                                <option value="2">alexandria</option>
+                                <option value="3">sharm elsheikh</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="advanced">
+                            <button type="button" class="btn" onclick="advancedSearch()">
+                                <span><i class="fas fa-cog"></i> advanced</span>
+                                <span class="close-search"><i class="fas fa-angle-up"></i> close</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-btn">
+                    <button class="btn" type="submit">
+                        search
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div >
+        <div class="search-cloud">
+            <img src="images/search-cloud.png" alt="">
+        </div>
+        <div class="search-cloud">
+            <img src="images/search-cloud.png" alt="">
+        </div>
+        <div class="search-cloud">
+            <img src="images/search-cloud.png" alt="">
+        </div>
+    </div>
+    <div class="black-overlay"></div>
+</div>
+<main>
+    <div class="breadcrumb-alley">
+        <div class="container">
+            <h1 class="internals-heading">my profile</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">property</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <section class="property-page">
+        <div class="container">
+            <div class="tabs-navigation">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                           aria-controls="home" aria-selected="true">all</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                           aria-controls="profile" aria-selected="false">for sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                           aria-controls="contact" aria-selected="false">for rent</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="details-content">
+                <div class="tab-content content-side" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="search-result">
+                            <div class="search-block">
+                                <div class="search-img">
+                                    <a href="#">
+                                        <img src="media/item.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="search-bio">
+                                    <h3>Arlo Apartment</h3>
+                                    <article>
+                                        <p>Lorem ipsum dolor amet crucifix edison bulb hoodie subway tile, banh mi paleo everyday carry pressed authentic chambray chicharronLorem ipsum dolor amet crucifix edison bulb hoodie subway tile, banh mi paleo everyday carry pressed authentic chambray chicharron</p>
+                                    </article>
+                                    <div class="search-info">
+                                        <div>
+                                            <p class="text-capitalize">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <span>154, meserol new yourk</span>
+                                            </p>
+                                            <p>
+                                                <span>3 <i class="fas fa-bed"></i>  1 <i class="fas fa-shower"></i> </span>
+                                            </p>
+                                        </div>
+                                        <a href="#" class="see-more">see more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-block">
+                                <div class="search-img">
+                                    <img src="media/item.jpg" alt="">
+                                </div>
+                                <div class="search-bio">
+                                    <h3>Arlo Apartment</h3>
+                                    <article>
+                                        <p>Lorem ipsum dolor amet crucifix edison bulb hoodie subway tile, banh mi paleo everyday carry pressed authentic chambray chicharronLorem ipsum dolor amet crucifix edison bulb hoodie subway tile, banh mi paleo everyday carry pressed authentic chambray chicharron</p>
+                                    </article>
+                                    <div class="search-info">
+                                        <div>
+                                            <p class="text-capitalize">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <span>154, meserol new yourk</span>
+                                            </p>
+                                            <p>
+                                                <span>3 <i class="fas fa-bed"></i>  1 <i class="fas fa-shower"></i> </span>
+                                            </p>
+                                        </div>
+                                        <a href="#" class="see-more">see more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-block">
+                                <div class="search-img">
+                                    <img src="media/item.jpg" alt="">
+                                </div>
+                                <div class="search-bio">
+                                    <h3>Arlo Apartment</h3>
+                                    <article>
+                                        <p>Lorem ipsum dolor amet crucifix edison bulb hoodie subway tile, banh mi paleo everyday carry pressed authentic chambray chicharronLorem ipsum dolor amet crucifix edison bulb hoodie subway tile, banh mi paleo everyday carry pressed authentic chambray chicharron</p>
+                                    </article>
+                                    <div class="search-info">
+                                        <div>
+                                            <p class="text-capitalize">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <span>154, meserol new yourk</span>
+                                            </p>
+                                            <p>
+                                                <span>3 <i class="fas fa-bed"></i>  1 <i class="fas fa-shower"></i> </span>
+                                            </p>
+                                        </div>
+                                        <a href="#" class="see-more">see more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-block">
+                                <div class="search-img">
+                                    <img src="media/item.jpg" alt="">
+                                </div>
+                                <div class="search-bio">
+                                    <h3>Arlo Apartment</h3>
+                                    <article>
+                                        <p>Lorem ipsum dolor amet crucifix edison bulb hoodie subway tile, banh mi paleo everyday carry pressed authentic chambray chicharronLorem ipsum dolor amet crucifix edison bulb hoodie subway tile, banh mi paleo everyday carry pressed authentic chambray chicharron</p>
+                                    </article>
+                                    <div class="search-info">
+                                        <div>
+                                            <p class="text-capitalize">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <span>154, meserol new yourk</span>
+                                            </p>
+                                            <p>
+                                                <span>3 <i class="fas fa-bed"></i>  1 <i class="fas fa-shower"></i> </span>
+                                            </p>
+                                        </div>
+                                        <a href="#" class="see-more">see more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <nav aria-label="Page navigation" class="pagination-nav">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <i class="fas fa-arrow-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="search-result">
+                            <div class="search-block">
+                                <div class="search-img">
+                                    <img src="media/item.jpg" alt="">
+                                </div>
+                                <div class="search-bio">
+                                    <h3>Arlo Apartment</h3>
+                                    <article>
+                                        <p>Lorem ipsum dolor amet crucifix edison bulb hoodie subway tile, banh mi paleo everyday carry pressed authentic chambray chicharronLorem ipsum dolor amet crucifix edison bulb hoodie subway tile, banh mi paleo everyday carry pressed authentic chambray chicharron</p>
+                                    </article>
+                                    <div class="search-info">
+                                        <div>
+                                            <p class="text-capitalize">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <span>154, meserol new yourk</span>
+                                            </p>
+                                            <p>
+                                                <span>3 <i class="fas fa-bed"></i>  1 <i class="fas fa-shower"></i> </span>
+                                            </p>
+                                        </div>
+                                        <a href="#" class="see-more">see more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-block">
+                                <div class="search-img">
+                                    <img src="media/item.jpg" alt="">
+                                </div>
+                                <div class="search-bio">
+                                    <h3>Arlo Apartment</h3>
+                                    <article>
+                                        <p>Lorem ipsum dolor amet crucifix edison bulb hoodie subway tile, banh mi paleo everyday carry pressed authentic chambray chicharronLorem ipsum dolor amet crucifix edison bulb hoodie subway tile, banh mi paleo everyday carry pressed authentic chambray chicharron</p>
+                                    </article>
+                                    <div class="search-info">
+                                        <div>
+                                            <p class="text-capitalize">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <span>154, meserol new yourk</span>
+                                            </p>
+                                            <p>
+                                                <span>3 <i class="fas fa-bed"></i>  1 <i class="fas fa-shower"></i> </span>
+                                            </p>
+                                        </div>
+                                        <a href="#" class="see-more">see more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <nav aria-label="Page navigation" class="pagination-nav">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <i class="fas fa-arrow-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="search-result">
+                            <div class="search-block">
+                                <div class="search-img">
+                                    <img src="media/item.jpg" alt="">
+                                </div>
+                                <div class="search-bio">
+                                    <h3>Arlo Apartment</h3>
+                                    <article>
+                                        <p>Lorem ipsum dolor amet crucifix edison bulb hoodie subway tile, banh mi paleo everyday carry pressed authentic chambray chicharronLorem ipsum dolor amet crucifix edison bulb hoodie subway tile, banh mi paleo everyday carry pressed authentic chambray chicharron</p>
+                                    </article>
+                                    <div class="search-info">
+                                        <div>
+                                            <p class="text-capitalize">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <span>154, meserol new yourk</span>
+                                            </p>
+                                            <p>
+                                                <span>3 <i class="fas fa-bed"></i>  1 <i class="fas fa-shower"></i> </span>
+                                            </p>
+                                        </div>
+                                        <a href="#" class="see-more">see more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-block">
+                                <div class="search-img">
+                                    <img src="media/item.jpg" alt="">
+                                </div>
+                                <div class="search-bio">
+                                    <h3>Arlo Apartment</h3>
+                                    <article>
+                                        <p>Lorem ipsum dolor amet crucifix edison bulb hoodie subway tile, banh mi paleo everyday carry pressed authentic chambray chicharronLorem ipsum dolor amet crucifix edison bulb hoodie subway tile, banh mi paleo everyday carry pressed authentic chambray chicharron</p>
+                                    </article>
+                                    <div class="search-info">
+                                        <div>
+                                            <p class="text-capitalize">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <span>154, meserol new yourk</span>
+                                            </p>
+                                            <p>
+                                                <span>3 <i class="fas fa-bed"></i>  1 <i class="fas fa-shower"></i> </span>
+                                            </p>
+                                        </div>
+                                        <a href="#" class="see-more">see more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <nav aria-label="Page navigation" class="pagination-nav">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <i class="fas fa-arrow-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <aside class="any-aside">
+                    <div class="block-aside">
+                        <h1>recommended</h1>
+                        <div class="block-aside-bg">
+                            <div class="curve-aside">
+                                <h2>your budget</h2>
+                                <div class="check-square">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck02">
+                                        <label class="form-check-label" for="gridCheck02">remember me</label>
+                                    </div>
+                                </div>
+                                <div class="check-square">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck03">
+                                        <label class="form-check-label" for="gridCheck03">remember me</label>
+                                    </div>
+                                </div>
+                                <div class="check-square">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck04">
+                                        <label class="form-check-label" for="gridCheck04">remember me</label>
+                                    </div>
+                                </div>
+                                <div class="check-square">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck05">
+                                        <label class="form-check-label" for="gridCheck05">remember me</label>
+                                    </div>
+                                </div>
+                                <div class="check-square">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck06">
+                                        <label class="form-check-label" for="gridCheck06">remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider-curve"></div>
+                        <div class="block-aside-bg">
+                            <div class="curve-aside">
+                                <h2>your budget</h2>
+                                <div class="check-square">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck07">
+                                        <label class="form-check-label" for="gridCheck07">remember me</label>
+                                    </div>
+                                </div>
+                                <div class="check-square">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck08">
+                                        <label class="form-check-label" for="gridCheck08">remember me</label>
+                                    </div>
+                                </div>
+                                <div class="check-square">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck09">
+                                        <label class="form-check-label" for="gridCheck09">remember me</label>
+                                    </div>
+                                </div>
+                                <div class="check-square">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck10">
+                                        <label class="form-check-label" for="gridCheck10">remember me</label>
+                                    </div>
+                                </div>
+                                <div class="check-square">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck11">
+                                        <label class="form-check-label" for="gridCheck11">remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider-curve"></div>
+                        <div class="block-aside-bg">
+                            <div class="curve-aside">
+                                <h2>your budget</h2>
+                                <div class="check-square">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck12">
+                                        <label class="form-check-label" for="gridCheck12">remember me</label>
+                                    </div>
+                                </div>
+                                <div class="check-square">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck13">
+                                        <label class="form-check-label" for="gridCheck13">remember me</label>
+                                    </div>
+                                </div>
+                                <div class="check-square">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck14">
+                                        <label class="form-check-label" for="gridCheck14">remember me</label>
+                                    </div>
+                                </div>
+                                <div class="check-square">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck15">
+                                        <label class="form-check-label" for="gridCheck15">remember me</label>
+                                    </div>
+                                </div>
+                                <div class="check-square">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck16">
+                                        <label class="form-check-label" for="gridCheck16">remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn go" type="button">go </button>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="search-cloud">
+        <img src="images/footer-cloud.png" alt="">
+    </div>
+    <div class="container">
+        <div class="main-sec-title">
+            contact us
+            <div class="title-border"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="heading">links</div>
+                <ul class="small">
+                    <li>
+                        <a href="index.html">home</a>
+                    </li>
+                    <li>
+                        <a href="#">about us</a>
+                    </li>
+                    <li>
+                        <a href="#">login</a>
+                    </li>
+                    <li>
+                        <a href="#">signup</a>
+                    </li>
+                    <li>
+                        <a href="#">faq</a>
+                    </li>
+                    <li>
+                        <a href="#">become a host</a>
+                    </li>
+                    <li>
+                        <a href="#">contact us</a>
+                    </li>
+                    <li>
+                        <a href="#">terms & conditions</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="heading center">invite your friend and</div>
+                <div class="footer-ads">
+                    <img src="images/footer-ads.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="heading">newsletter</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloremque eius </p>
+                <form action="">
+                    <input type="email" class="form-control" placeholder="Email">
+                    <button class="btn" type="button">
+                        send
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyrights">
+        copyright 2019 By <a href="http://www.diva-lab.com/">Diva lab</a> All rights reserved.
+    </div>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!--<script-->
+<!--src="https://code.jquery.com/jquery-3.3.1.min.js"-->
+<!--integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="-->
+<!--crossorigin="anonymous"></script>-->
+<!--<script src="js/jquery-3.3.1.js"></script>-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"-->
+<!--integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"-->
+<!--crossorigin="anonymous"></script>-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<!--Select 2 Script-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>-->
+<!--<script src="js/dropzone.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.js"></script>
+<script src="js/select2.full.js"></script>
+<script>
+    $(document).ready(function () {
+        //-----core----
+        $('header .custom-select').select2({
+            minimumResultsForSearch: Infinity,
+            dropdownCssClass: 'header-select'
+        });
+        $('.search-back .custom-select').select2({
+            minimumResultsForSearch: Infinity,
+            dropdownCssClass: 'search-select'
+        });
+        //---------forms-script-------------
+        $('main .custom-select').select2({
+            minimumResultsForSearch: Infinity,
+            dropdownCssClass: 'main-select'
+        });
+    });
+</script>
+<!--Main Script-->
+<script src="js/main-script.js"></script>
+</body>
+</html>

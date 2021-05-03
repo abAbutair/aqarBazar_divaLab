@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style-en.css">
+    <title>Aqar Bazar</title>
+</head>
+
+<body>
+<header>
+    <nav class="upper-nav">
+        <ul>
+            <li>
+                <div class="sel">
+                    <select class="custom-select">
+                        <option selected>country</option>
+                        <option value="1">egypt</option>
+                        <option value="2">turkey</option>
+                        <option value="3">canada</option>
+                    </select>
+                </div>
+            </li>
+            <li>
+                <div class="sel">
+                    <select class="custom-select">
+                        <option selected>currency</option>
+                        <option value="1">currency01</option>
+                        <option value="2">currency02</option>
+                        <option value="3">currency03</option>
+                        <option value="4">currency04</option>
+                    </select>
+                </div>
+            </li>
+            <li>
+                <div class="sel">
+                    <select class="custom-select">
+                        <option selected>language</option>
+                        <option value="1">arabic</option>
+                        <option value="2">english</option>
+                    </select>
+                </div>
+            </li>
+            <!-- header after login -->
+            <li>
+                <div class="dropdown message-alert">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-comments"></i>
+                        <span>2</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown notification-alert">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton02"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bell"></i>
+                        <span>9</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton02">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton03"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton03">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </li>
+            <!-- end of header after login -->
+        </ul>
+    </nav>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">about us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Add your PROPERTIES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">faq</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="search-back small-search" style="background-image: url('images/main-pic.jpg')">
+    <div class="rent-search">
+        <div class="container">
+            <h1 class="search-heading">renting become easier</h1>
+            <form class="dark-form" action="">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="sel">
+                            <select class="custom-select">
+                                <option selected>location</option>
+                                <option value="1">cairo</option>
+                                <option value="2">alexandria</option>
+                                <option value="3">sharm elsheikh</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="date-form">
+                            <input type="text" name="value_from_start_date" data-datepicker="separateRange"
+                                   placeholder="date from">
+                            <input type="text" name="value_from_end_date" data-datepicker="separateRange"
+                                   placeholder="to">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="sel">
+                            <select class="custom-select">
+                                <option selected>by type</option>
+                                <option value="1">cairo</option>
+                                <option value="2">alexandria</option>
+                                <option value="3">sharm elsheikh</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="sel search-control">
+                            <select class="custom-select">
+                                <option selected>num of guests</option>
+                                <option value="1">cairo</option>
+                                <option value="2">alexandria</option>
+                                <option value="3">sharm elsheikh</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="sel search-control">
+                            <select class="custom-select">
+                                <option selected>num of rooms</option>
+                                <option value="1">cairo</option>
+                                <option value="2">alexandria</option>
+                                <option value="3">sharm elsheikh</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="sel search-control">
+                            <select class="custom-select">
+                                <option selected>max price</option>
+                                <option value="1">cairo</option>
+                                <option value="2">alexandria</option>
+                                <option value="3">sharm elsheikh</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="advanced">
+                            <button type="button" class="btn" onclick="advancedSearch()">
+                                <span><i class="fas fa-cog"></i> advanced</span>
+                                <span class="close-search"><i class="fas fa-angle-up"></i> close</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-btn">
+                    <button class="btn" type="submit">
+                        search
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div >
+        <div class="search-cloud">
+            <img src="images/search-cloud.png" alt="">
+        </div>
+        <div class="search-cloud">
+            <img src="images/search-cloud.png" alt="">
+        </div>
+        <div class="search-cloud">
+            <img src="images/search-cloud.png" alt="">
+        </div>
+    </div>
+    <div class="black-overlay"></div>
+</div>
+<main>
+    <div class="breadcrumb-alley">
+        <div class="container">
+            <h1 class="internals-heading">contact us</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">contact us</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <section class="faq">
+        <div class="container">
+            <div class="vertical-line"></div>
+            <div class="accordion clearfix" id="accordionExample">
+                <ul class="columns" data-columns="2">
+                    <li>
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                        Sed ut perspiciatis unde
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                 data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <P>
+                                        Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri.
+                                        In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo
+                                        equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum
+                                        omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo
+                                        equidem sanctus no. Suas summo id sed, eratUsu habeo equidem sanctus no.
+                                        Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad
+                                        debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas
+                                        summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad
+                                        debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas
+                                        summo id sed, erat erant oporteat cu pri. In eum omnes molestieUsu habeo
+                                        equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum
+                                        omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo
+                                        equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum
+                                        omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo
+                                        equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum
+                                        omnes molestieUsu habeo equidem sanctus non eum omnes molestieUsu habeo
+                                        equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum
+                                        omnes . In eum omnes molestie
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Sed ut perspiciatis unde
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <P>
+                                        Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Sed ut perspiciatis unde
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <P>
+                                        Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Sed ut perspiciatis unde
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <P>
+                                        Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="card-header" id="heading05">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse05" aria-expanded="false" aria-controls="collapse05">
+                                        Sed ut perspiciatis unde
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse05" class="collapse" aria-labelledby="heading05" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <P>
+                                        Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="card-header" id="heading06">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse06" aria-expanded="false" aria-controls="collapse06">
+                                        Sed ut perspiciatis unde
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse06" class="collapse" aria-labelledby="heading06" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <P>
+                                        Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="card-header" id="heading07">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse07" aria-expanded="false" aria-controls="collapse07">
+                                        Sed ut perspiciatis unde
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse07" class="collapse" aria-labelledby="heading07" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <P>
+                                        Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="card-header" id="heading08">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse08" aria-expanded="false" aria-controls="collapse08">
+                                        Sed ut perspiciatis unde
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse08" class="collapse" aria-labelledby="heading08" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <P>
+                                        Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="card-header" id="heading09">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse09" aria-expanded="false" aria-controls="collapse09">
+                                        Sed ut perspiciatis unde
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse09" class="collapse" aria-labelledby="heading09" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <P>
+                                        Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="card-header" id="heading10">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                        Sed ut perspiciatis unde
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <P>
+                                        Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="card-header" id="heading11">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                                        Sed ut perspiciatis unde
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <P>
+                                        Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="card-header" id="heading12">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                                        Sed ut perspiciatis unde
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <P>
+                                        Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="card-header" id="heading13">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                                        Sed ut perspiciatis unde
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <P>
+                                        Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="card-header" id="heading14">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                                        Sed ut perspiciatis unde
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse14" class="collapse" aria-labelledby="heading14" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <P>
+                                        Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, In eum omnes molestieUsu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="search-cloud">
+        <img src="images/footer-cloud.png" alt="">
+    </div>
+    <div class="container">
+        <div class="main-sec-title">
+            contact us
+            <div class="title-border"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="heading">links</div>
+                <ul class="small">
+                    <li>
+                        <a href="index.html">home</a>
+                    </li>
+                    <li>
+                        <a href="#">about us</a>
+                    </li>
+                    <li>
+                        <a href="#">login</a>
+                    </li>
+                    <li>
+                        <a href="#">signup</a>
+                    </li>
+                    <li>
+                        <a href="#">faq</a>
+                    </li>
+                    <li>
+                        <a href="#">become a host</a>
+                    </li>
+                    <li>
+                        <a href="#">contact us</a>
+                    </li>
+                    <li>
+                        <a href="#">terms & conditions</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="heading center">invite your friend and</div>
+                <div class="footer-ads">
+                    <img src="images/footer-ads.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="heading">newsletter</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloremque eius </p>
+                <form action="">
+                    <input type="email" class="form-control" placeholder="Email">
+                    <button class="btn" type="button">
+                        send
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyrights">
+        copyright 2019 By <a href="http://www.diva-lab.com/">Diva lab</a> All rights reserved.
+    </div>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!--<script-->
+<!--src="https://code.jquery.com/jquery-3.3.1.min.js"-->
+<!--integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="-->
+<!--crossorigin="anonymous"></script>-->
+<!--<script src="js/jquery-3.3.1.js"></script>-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"-->
+<!--integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"-->
+<!--crossorigin="anonymous"></script>-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<!--Select 2 Script-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>-->
+<!--<script src="js/dropzone.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.js"></script>
+<script src="js/select2.full.js"></script>
+<script>
+    $(document).ready(function () {
+        //-----core----
+        $('header .custom-select').select2({
+            minimumResultsForSearch: Infinity,
+            dropdownCssClass: 'header-select'
+        });
+        $('.search-back .custom-select').select2({
+            minimumResultsForSearch: Infinity,
+            dropdownCssClass: 'search-select'
+        });
+        //---------forms-script-------------
+        $('main .custom-select').select2({
+            minimumResultsForSearch: Infinity,
+            dropdownCssClass: 'main-select'
+        });
+    });
+</script>
+<script>
+    (function ($) {
+        var initialContainer = $('.columns'),
+            columnItems = $('.columns li'),
+            columns = null,
+            column = 0; // account for initial column
+        // function updateColumns(){
+        //     column = 0;
+        //     columnItems.each(function(idx, el){
+        //         if (idx !== 0 && idx > (columnItems.length / columns.length) + (column * idx)){
+        //             column += 1;
+        //         }
+        //         $(columns.get(column)).append(el);
+        //     });
+        // }
+        function updateColumns() {
+            column = 0;
+            columnItems.each(function (idx, el) {
+                if (column > columns.length) {
+                    column = 0;
+                }
+                $(columns.get(column)).append(el);
+                column += 1;
+            });
+        }
+
+        function setupColumns() {
+            columnItems.detach();
+            while (column++ < (initialContainer.data('columns'))) {
+                initialContainer.clone().insertBefore(initialContainer);
+                column++;
+            }
+            columns = $('.columns');
+        }
+
+        $(function () {
+            setupColumns();
+            updateColumns();
+        });
+    })(jQuery);
+</script>
+
+<!--Main Script-->
+<script src="js/main-script.js"></script>
+</body>
+</html>

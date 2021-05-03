@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"-->
+    <!--integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <!-- my css -->
+
+
+    <link href="https://fonts.googleapis.com/css?family=Markazi+Text" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style-en.css">
+    <title>Aqar Bazar</title>
+</head>
+
+<body>
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <p>loading</p>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+<header>
+    <nav class="upper-nav">
+        <ul>
+            <li>
+                <div class="sel">
+                    <select class="custom-select">
+                        <option selected>country</option>
+                        <option value="1">egypt</option>
+                        <option value="2">turkey</option>
+                        <option value="3">canada</option>
+                    </select>
+                </div>
+            </li>
+            <li>
+                <div class="sel">
+                    <select class="custom-select">
+                        <option selected>currency</option>
+                        <option value="1">currency01</option>
+                        <option value="2">currency02</option>
+                        <option value="3">currency03</option>
+                        <option value="4">currency04</option>
+                    </select>
+                </div>
+            </li>
+            <li>
+                <div class="sel">
+                    <select class="custom-select">
+                        <option selected>language</option>
+                        <option value="1">arabic</option>
+                        <option value="2">english</option>
+                    </select>
+                </div>
+            </li>
+            <li>
+                <button type="button" class="btn login-register" onclick="window.location.href='#'">
+                    <i class="fas fa-sign-in-alt"></i>
+                </button>
+                <button type="button" class="btn login-register" onclick="window.location.href='#'">
+                    <i class="fas fa-user-plus"></i>
+                </button>
+            </li>
+        </ul>
+    </nav>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler open-nav" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <button class="navbar-toggler close-nav" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">about us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Add your PROPERTIES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">faq</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="search-back" style="background-image: url('images/main-pic.jpg')">
+    <div class="rent-search">
+        <div class="container">
+            <h1 class="search-heading">renting become easier</h1>
+            <form class="dark-form" action="">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="sel">
+                            <select class="custom-select">
+                                <option selected>location</option>
+                                <option value="1">cairo</option>
+                                <option value="2">alexandria</option>
+                                <option value="3">sharm elsheikh</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  ">
+                        <div class="date-form">
+                            <input type="text" name="value_from_start_date" data-datepicker="separateRange"
+                                   placeholder="date from">
+                            <input type="text" name="value_from_end_date" data-datepicker="separateRange"
+                                   placeholder="to">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="sel">
+                            <select class="custom-select">
+                                <option selected>by type</option>
+                                <option value="1">cairo</option>
+                                <option value="2">alexandria</option>
+                                <option value="3">sharm elsheikh</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="sel">
+                            <select class="custom-select">
+                                <option selected>num of guests</option>
+                                <option value="1">cairo</option>
+                                <option value="2">alexandria</option>
+                                <option value="3">sharm elsheikh</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="sel">
+                            <select class="custom-select">
+                                <option selected>num of rooms</option>
+                                <option value="1">cairo</option>
+                                <option value="2">alexandria</option>
+                                <option value="3">sharm elsheikh</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="sel">
+                            <select class="custom-select">
+                                <option selected>max price</option>
+                                <option value="1">cairo</option>
+                                <option value="2">alexandria</option>
+                                <option value="3">sharm elsheikh</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-btn">
+                    <button class="btn" type="submit">
+                        search
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div>
+        <div class="search-cloud">
+            <img src="images/search-cloud.png" alt="">
+        </div>
+        <div class="search-cloud">
+            <img src="images/search-cloud.png" alt="">
+        </div>
+        <div class="search-cloud">
+            <img src="images/search-cloud.png" alt="">
+        </div>
+    </div>
+    <div class="black-overlay"></div>
+</div>
+<main>
+    <section class="section properties">
+        <div class="container">
+            <div class="main-sec-title">
+                Based on your last search
+                <div class="title-border"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <a href="#" class="item">
+                        <div class="shape">
+                            <div class="frame"></div>
+                            <div class="preview" style="background-image: url('media/item.jpg')">
+                                <div class="quick-info">
+                                    <p class="text-capitalize">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>154, meserol new yourk</span>
+                                    </p>
+                                    <p class="feature">
+                                        <span>3 <i class="fas fa-bed"></i>  1 <i class="fas fa-shower"></i> </span>
+                                        <span>865.00</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tag text-capitalize"><span>for rent</span></div>
+                        </div>
+                        <div class="title text-center " title="Arlo aparatment">Arlo aparatment</div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="#" class="item">
+                        <div class="shape">
+                            <div class="frame"></div>
+                            <div class="preview" style="background-image: url('media/item.jpg')">
+                                <div class="quick-info">
+                                    <p class="text-capitalize">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>154, meserol new yourk</span>
+                                    </p>
+                                    <p class="feature">
+                                        <span>3 <i class="fas fa-bed"></i>  1 <i class="fas fa-shower"></i> </span>
+                                        <span>865.00</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tag text-capitalize"><span>for rent</span></div>
+                        </div>
+                        <div class="title text-center " title="Arlo aparatment">Arlo aparatment</div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="#" class="item">
+                        <div class="shape">
+                            <div class="frame"></div>
+                            <div class="preview" style="background-image: url('media/item.jpg')">
+                                <div class="quick-info">
+                                    <p class="text-capitalize">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>154, meserol new yourk</span>
+                                    </p>
+                                    <p class="feature">
+                                        <span>3 <i class="fas fa-bed"></i>  1 <i class="fas fa-shower"></i> </span>
+                                        <span>865.00</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tag text-capitalize"><span>for rent</span></div>
+                        </div>
+                        <div class="title text-center " title="Arlo aparatment">Arlo aparatment</div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="#" class="item">
+                        <div class="shape">
+                            <div class="frame"></div>
+                            <div class="preview" style="background-image: url('media/item.jpg')">
+                                <div class="quick-info">
+                                    <p class="text-capitalize">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>154, meserol new yourk</span>
+                                    </p>
+                                    <p class="feature">
+                                        <span>3 <i class="fas fa-bed"></i>  1 <i class="fas fa-shower"></i> </span>
+                                        <span>865.00</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tag text-capitalize"><span>for rent</span></div>
+                        </div>
+                        <div class="title text-center " title="Arlo aparatment">Arlo aparatment</div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="#" class="item">
+                        <div class="shape">
+                            <div class="frame"></div>
+                            <div class="preview" style="background-image: url('media/item.jpg')">
+                                <div class="quick-info">
+                                    <p class="text-capitalize">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>154, meserol new yourk</span>
+                                    </p>
+                                    <p class="feature">
+                                        <span>3 <i class="fas fa-bed"></i>  1 <i class="fas fa-shower"></i> </span>
+                                        <span>865.00</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tag text-capitalize"><span>for rent</span></div>
+                        </div>
+                        <div class="title text-center " title="Arlo aparatment">Arlo aparatment</div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="#" class="item">
+                        <div class="shape">
+                            <div class="frame"></div>
+                            <div class="preview" style="background-image: url('media/item.jpg')">
+                                <div class="quick-info">
+                                    <p class="text-capitalize">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>154, meserol new yourk</span>
+                                    </p>
+                                    <p class="feature">
+                                        <span>3 <i class="fas fa-bed"></i>  1 <i class="fas fa-shower"></i> </span>
+                                        <span>865.00</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tag text-capitalize"><span>for rent</span></div>
+                        </div>
+                        <div class="title text-center " title="Arlo aparatment">Arlo aparatment</div>
+                    </a>
+                </div>
+                <button class="btn" onclick="location.href=''" type="button">see more</button>
+            </div>
+        </div>
+    </section>
+    <section class="section featured">
+        <div class="container">
+            <div class="main-sec-title">
+                featured properties
+                <div class="title-border"></div>
+            </div>
+            <div class="row">
+                <div class="col-xl-9 col-sm-12">
+                    <div id="featuedPoperties" class="carousel slide carousel-fade" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="featured-property"
+                                             style="background-image:url('media/item.jpg')"></div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="featured-flex">
+                                            <div>
+                                                <div class="title">
+                                                    <span class="name heading">Arlo apartment</span>
+                                                    <span class="price">895.00 $</span>
+                                                </div>
+                                                <p>Lorem ipsum dolor amet crucifix edison bulb hoodie subway tile, banh
+                                                    mi paleo everyday carry pressed authentic chambray chicharrones
+                                                    pitchfork.</p>
+                                                <p class="text-capitalize">
+                                                    <i class="fas fa-map-marker-alt"></i>
+                                                    <span>154, meserol new yourk</span>
+                                                </p>
+                                                <p class="feature">
+                                                    <span>3 <i class="fas fa-bed"></i>  1 <i class="fas fa-shower"></i> </span>
+                                                </p>
+                                                <p class="heading social">
+                                                    follow us:
+                                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div class="carousel-item">-->
+                                <!--<div class="row">-->
+                                    <!--<div class="col-md-4">-->
+                                        <!--<div class="featured-property"-->
+                                             <!--style="background-image:url('media/item.jpg')"></div>-->
+                                    <!--</div>-->
+                                    <!--<div class="col-md-8">-->
+                                        <!--<div class="featured-flex">-->
+                                            <!--<div>-->
+                                                <!--<div class="title">-->
+                                                    <!--<span class="name heading">Arlo apartment</span>-->
+                                                    <!--<span class="price">895.00 $</span>-->
+                                                <!--</div>-->
+                                                <!--<p>Lorem ipsum dolor amet crucifix edison bulb hoodie subway tile, banh-->
+                                                    <!--mi paleo everyday carry pressed authentic chambray chicharrones-->
+                                                    <!--pitchfork.</p>-->
+                                                <!--<p class="text-capitalize">-->
+                                                    <!--<i class="fas fa-map-marker-alt"></i>-->
+                                                    <!--<span>154, meserol new yourk</span>-->
+                                                <!--</p>-->
+                                                <!--<p class="feature">-->
+                                                    <!--<span>3 <i class="fas fa-bed"></i>  1 <i class="fas fa-shower"></i> </span>-->
+                                                <!--</p>-->
+                                                <!--<p class="heading social">-->
+                                                    <!--follow us:-->
+                                                    <!--<a href="#"><i class="fab fa-facebook-f"></i></a>-->
+                                                    <!--<a href="#"><i class="fab fa-twitter"></i></a>-->
+                                                    <!--<a href="#"><i class="fab fa-linkedin-in"></i></a>-->
+                                                    <!--<a href="#"><i class="fab fa-google-plus-g"></i></a>-->
+                                                <!--</p>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="carousel-item">-->
+                                <!--<div class="row">-->
+                                    <!--<div class="col-md-4">-->
+                                        <!--<div class="featured-property"-->
+                                             <!--style="background-image:url('media/item.jpg')"></div>-->
+                                    <!--</div>-->
+                                    <!--<div class="col-md-8">-->
+                                        <!--<div class="featured-flex">-->
+                                            <!--<div>-->
+                                                <!--<div class="title">-->
+                                                    <!--<span class="name heading">Arlo apartment</span>-->
+                                                    <!--<span class="price">895.00 $</span>-->
+                                                <!--</div>-->
+                                                <!--<p>Lorem ipsum dolor amet crucifix edison bulb hoodie subway tile, banh-->
+                                                    <!--mi paleo everyday carry pressed authentic chambray chicharrones-->
+                                                    <!--pitchfork.</p>-->
+                                                <!--<p class="text-capitalize">-->
+                                                    <!--<i class="fas fa-map-marker-alt"></i>-->
+                                                    <!--<span>154, meserol new yourk</span>-->
+                                                <!--</p>-->
+                                                <!--<p class="feature">-->
+                                                    <!--<span>3 <i class="fas fa-bed"></i>  1 <i class="fas fa-shower"></i> </span>-->
+                                                <!--</p>-->
+                                                <!--<p class="heading social">-->
+                                                    <!--follow us:-->
+                                                    <!--<a href="#"><i class="fab fa-facebook-f"></i></a>-->
+                                                    <!--<a href="#"><i class="fab fa-twitter"></i></a>-->
+                                                    <!--<a href="#"><i class="fab fa-linkedin-in"></i></a>-->
+                                                    <!--<a href="#"><i class="fab fa-google-plus-g"></i></a>-->
+                                                <!--</p>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="carousel-item">-->
+                                <!--<div class="row">-->
+                                    <!--<div class="col-md-4">-->
+                                        <!--<div class="featured-property"-->
+                                             <!--style="background-image:url('media/item.jpg')"></div>-->
+                                    <!--</div>-->
+                                    <!--<div class="col-md-8">-->
+                                        <!--<div class="featured-flex">-->
+                                            <!--<div>-->
+                                                <!--<div class="title">-->
+                                                    <!--<span class="name heading">Arlo apartment</span>-->
+                                                    <!--<span class="price">895.00 $</span>-->
+                                                <!--</div>-->
+                                                <!--<p>Lorem ipsum dolor amet crucifix edison bulb hoodie subway tile, banh-->
+                                                    <!--mi paleo everyday carry pressed authentic chambray chicharrones-->
+                                                    <!--pitchfork.</p>-->
+                                                <!--<p class="text-capitalize">-->
+                                                    <!--<i class="fas fa-map-marker-alt"></i>-->
+                                                    <!--<span>154, meserol new yourk</span>-->
+                                                <!--</p>-->
+                                                <!--<p class="feature">-->
+                                                    <!--<span>3 <i class="fas fa-bed"></i>  1 <i class="fas fa-shower"></i> </span>-->
+                                                <!--</p>-->
+                                                <!--<p class="heading social">-->
+                                                    <!--follow us:-->
+                                                    <!--<a href="#"><i class="fab fa-facebook-f"></i></a>-->
+                                                    <!--<a href="#"><i class="fab fa-twitter"></i></a>-->
+                                                    <!--<a href="#"><i class="fab fa-linkedin-in"></i></a>-->
+                                                    <!--<a href="#"><i class="fab fa-google-plus-g"></i></a>-->
+                                                <!--</p>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <ol class="row carousel-indicators">
+                            <li data-target="#featuedPoperties" data-slide-to="0" class="col-3 active">
+                                <div class="featured-property" style="background-image:url('media/item.jpg')"></div>
+                                <div class="heading small">ARLO APARATMENT</div>
+                                <span class="price small">598.00 $</span>
+                            </li>
+                            <li data-target="#featuedPoperties" data-slide-to="1" class="col-3">
+                                <div class="featured-property" style="background-image:url('media/item.jpg')"></div>
+                                <div class="heading small">ARLO APARATMENT</div>
+                                <span class="price small">598.00 $</span>
+                            </li>
+                            <li data-target="#featuedPoperties" data-slide-to="2" class="col-3">
+                                <div class="featured-property" style="background-image:url('media/item.jpg')"></div>
+                                <div class="heading small">ARLO APARATMENT</div>
+                                <span class="price small">598.00 $</span>
+                            </li>
+                            <li data-target="#featuedPoperties" data-slide-to="3" class="col-3">
+                                <div class="featured-property" style="background-image:url('media/item.jpg')"></div>
+                                <div class="heading small">ARLO APARATMENT</div>
+                                <span class="price small">598.00 $</span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <img src="images/1.png" class="img" alt="">
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="search-cloud">
+        <img src="images/footer-cloud.png" alt="">
+    </div>
+    <div class="apps">
+        <div class="container">
+            <h1 class="text-uppercase text-center">now you can get app</h1>
+            <div class="get-apps">
+                <button class="btn" type="button" onclick="location.href=''">
+                    <i class="fab fa-apple"></i> App Store
+                </button>
+                <button class="btn" type="button" onclick="location.href=''">
+                    <i class="fab fa-google-play"></i> google play
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-sec-title">
+            contact us
+            <div class="title-border"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="heading">links</div>
+                <ul class="small">
+                    <li>
+                        <a href="index.html">home</a>
+                    </li>
+                    <li>
+                        <a href="#">about us</a>
+                    </li>
+                    <li>
+                        <a href="#">login</a>
+                    </li>
+                    <li>
+                        <a href="#">signup</a>
+                    </li>
+                    <li>
+                        <a href="#">faq</a>
+                    </li>
+                    <li>
+                        <a href="#">become a host</a>
+                    </li>
+                    <li>
+                        <a href="#">contact us</a>
+                    </li>
+                    <li>
+                        <a href="#">terms & conditions</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="heading center">invite your friend and</div>
+                <div class="footer-ads">
+                    <img src="images/footer-ads.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="heading">newsletter</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloremque eius </p>
+                <form action="">
+                    <input type="email" class="form-control" placeholder="Email">
+                    <button class="btn" type="button">
+                        send
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyrights">
+        copyright 2019 By <a href="http://www.diva-lab.com/">Diva lab</a> All rights reserved.
+    </div>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!--<script-->
+<!--src="https://code.jquery.com/jquery-3.3.1.min.js"-->
+<!--integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="-->
+<!--crossorigin="anonymous"></script>-->
+<!--<script src="js/jquery-3.3.1.js"></script>-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"-->
+<!--integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"-->
+<!--crossorigin="anonymous"></script>-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<!--Select 2 Script-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>-->
+<script src="js/select2.full.js"></script>
+<script>
+    $(document).ready(function () {
+        //-----core----
+        $('header .custom-select').select2({
+            minimumResultsForSearch: Infinity,
+            dropdownCssClass: 'header-select',
+            dropdownAutoWidth: true,
+        });
+        $('.search-back .custom-select').select2({
+            minimumResultsForSearch: Infinity,
+            dropdownCssClass: 'search-select'
+        });
+        //---------forms-script-------------
+        $('main .custom-select').select2({
+            minimumResultsForSearch: Infinity,
+            dropdownCssClass: 'main-select'
+        });
+    });
+</script>
+<!--Main Script-->
+<script src="js/main-script.js"></script>
+</body>
+</html>
